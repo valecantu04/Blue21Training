@@ -1,0 +1,7 @@
+header {
+    background-image: linear-gradient(rbga(0, 0, 0, 0.6), bga(0, 0, 0, 0.6)), url(Images/96F4C25E-697D-44A9-821E-0D03FF6C1C3B.JPG);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-position: center center;
+
+}

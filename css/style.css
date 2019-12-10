@@ -1,5 +1,6 @@
 header {
-    background-image: linear-gradient(rbga(0, 0, 0, 0.6), rbga(0, 0, 0, 0.6)), url(../Images/Background.JPG);
+    background-image: linear-gradient(rbga(0, 0, 0, 0.6), rbga(0, 0, 0, 0.6)), URL('../Images/Background.JPG');
+    /* background-color: greenyellow; */
     height: 100vh;
     -webkit-background-size: cover;
     background-size: cover;

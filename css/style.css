@@ -1,7 +1,7 @@
 header {
-    background-image: linear-gradient(rbga(0, 0, 0, 0.6), bga(0, 0, 0, 0.6)), url(background.JPG);
+    background-image: linear-gradient(rbga(0, 0, 0, 0.6), rbga(0, 0, 0, 0.6)), url(../Images/Background.JPG);
     height: 100vh;
-    background-size: cover;
     -webkit-background-size: cover;
+    background-size: cover;
     background-position: center center;
 }

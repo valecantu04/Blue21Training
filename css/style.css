@@ -1,32 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
 header {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     URL('../Images/Background.JPG');
-    /* background-color: greenyellow; */
+    background-color: rgb(29, 29, 29);
     height: 100vh;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
 }
-.banner-text{
+
+programs {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    URL('../Images/Background.JPG');
+    background-color: rgb(29, 29, 29);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+    width: 100%;
+}
+
+.banner-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.navbar-brand{
-    font-family: big john;
+
+.navbar-brand {
+    font-family: Impact, Haettenschweiler, 'Arial Bold', sans-serif;
+    color: #4169e1;
 }
-.nav-link{
-    font-family: poppins;
+
+.navbar-brand a {
+    color: #4169e1;
+}
+
+.nav-link {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-transform: uppercase;
 }
-.banner-text p{
-    font-family: poppins;
-    color: #fff
+
+.banner-text p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: aliceblue;
 }
-.banner-btn a{
-    border : 1px solid #fff;
+
+.banner-btn a {
+    border: 1px solid #fff;
     border-radius: 50px;
     text-transform: uppercase;
     text-decoration: none;
@@ -35,4 +63,89 @@ header {
     margin-top: 15px;
     margin-left: 20px;
     color: #fff;
+}
+
+.banner-btn a.active {
+    background: #4169e1;
+    border-color: #4169e1;
+    color: #000;
+}
+
+/* TEXT ANIMATION */
+
+.text-area {
+    font-size: 70px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text-area span {
+    color: #4169e1;
+    opacity: 0;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: animate 5s forwards;
+}
+
+.text-area span {
+    display: inline-block;
+}
+
+.text-area span:nth-of-type(2) {
+    animation-delay: .1s;
+}
+
+.text-area span:nth-of-type(3) {
+    animation-delay: .2s;
+}
+
+.text-area span:nth-of-type(4) {
+    animation-delay: .3s;
+}
+
+.text-area span:nth-of-type(5) {
+    animation-delay: .4s;
+}
+
+.text-area span:nth-of-type(6) {
+    animation-delay: .5s;
+}
+
+.text-area span:nth-of-type(7) {
+    animation-delay: .6s;
+}
+
+.text-area span:nth-of-type(8) {
+    animation-delay: .7s;
+}
+
+@keyframes animate {
+    30% {
+        transform: translate(0, -50px) rotate(180deg) scale(1);
+    }
+
+    60% {
+        transform: translate(0, 20px) rotate(0deg) scale(.8);
+    }
+
+    100% {
+        transform: translate(0) rotate(0deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* RESPONSIVE CSS */
+
+@media (max-width:500px) {
+    .banner-text p {
+        display: none;
+    }
+
+    .navbar-dark {
+        background-color: #333;
+    }
+
+    .text-area {
+        font-size: 35px;
+    }
 }

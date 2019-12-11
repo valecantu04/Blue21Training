@@ -1,12 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-
+    background-color: rgb(29, 29, 29);
 }
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    URL('../Images/Background.JPG');
+        URL('../Images/Background.JPG');
     background-color: rgb(29, 29, 29);
     height: 100vh;
     -webkit-background-size: cover;
@@ -16,11 +16,47 @@ header {
 
 programs {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    URL('../Images/Background.JPG');
+        URL('../Images/Background2.JPG');
     background-color: rgb(29, 29, 29);
     height: 100vh;
     -webkit-background-size: cover;
-    background-size: cover;
+    background-size: auto;
+    background-position: center center;
+    display: inline-block;
+    width: 100%;
+}
+
+services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+        URL('../Images/Background.JPG');
+    background-color: rgb(29, 29, 29);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: auto;
+    background-position: center center;
+    display: inline-block;
+    width: 100%;
+}
+
+gallery {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+        URL('../Images/Background2.JPG');
+    background-color: rgb(29, 29, 29);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: auto;
+    background-position: center center;
+    display: inline-block;
+    width: 100%;
+}
+
+contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+        URL('../Images/Background.JPG');
+    background-color: rgb(29, 29, 29);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: auto;
     background-position: center center;
     display: inline-block;
     width: 100%;
@@ -53,8 +89,9 @@ programs {
     color: aliceblue;
 }
 
+/* buttons + animation */
 .banner-btn a {
-    border: 1px solid #fff;
+    border: 1px #888888 solid;
     border-radius: 50px;
     text-transform: uppercase;
     text-decoration: none;
@@ -63,9 +100,12 @@ programs {
     margin-top: 15px;
     margin-left: 20px;
     color: #fff;
+    -webkit-transition: background 700ms ease;
+    -o-transition: background 700ms ease;
+    transition: background 700ms ease;
 }
 
-.banner-btn a.active {
+.banner-btn a:hover {
     background: #4169e1;
     border-color: #4169e1;
     color: #000;
@@ -146,6 +186,6 @@ programs {
     }
 
     .text-area {
-        font-size: 35px;
+        font-size: 45px;
     }
 }

@@ -96,7 +96,7 @@ contact {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: aliceblue;
     text-transform: uppercase;
-    font-size: 4vh;
+    font-size: 10vh;
 }
 
 /* buttons + animation */
@@ -192,13 +192,32 @@ grid-programs {
     padding: 1%;
 }
 
+grid-contact {
+    display: grid;
+    font-family: arial;
+    grid-template-rows: 100px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1%;
+}
+
 .grid-header {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
     /* background: #66ff99; */
-    padding: 2% 20px;
+    /* padding: 2% 20px; */
+}
+
+.grid-header p {
+    font-family: 'Franklin Gothic Medium',
+        'Arial Narrow',
+        Arial,
+        sans-serif;
+    color: rgb(44, 106, 160);
+    text-transform: uppercase;
+    font-size: 10vh;
+    text-align: center;
 }
 
 .services-img {
@@ -233,6 +252,7 @@ grid-programs {
     text-transform: uppercase;
     font-size: 4vh;
     text-align: center;
+    padding-top: 3vh;
 }
 
 .program_img1 {
@@ -275,7 +295,10 @@ grid-programs {
 
     .grid-content-right p {
         font-size: 2vh;
+    }
 
+    .grid-header p {
+        font-size: 5vh;
     }
 
     programs {

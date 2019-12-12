@@ -19,7 +19,7 @@ programs {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
         URL('../Images/Background2.JPG');
     background-color: rgb(29, 29, 29);
-    height: 100vh;
+    height: 200vh;
     -webkit-background-size: cover;
     background-size: auto;
     background-position: center center;
@@ -200,6 +200,10 @@ grid-programs {
     /* background: #66ff99; */
     padding: 2% 20px;
 }
+.grid-footer {
+    padding-top: 1% 3%;
+    /* background: #ff7d66; */
+}
 
 .grid-side-left {
     grid-column-start: 1;
@@ -230,11 +234,21 @@ grid-programs {
     text-align: center;
 }
 
-.program_img {
+.program_img1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: flexbox;
+}
+
+.program_img2 {
+    width: 100%;
+    height: auto;
+    max-width: 50vw;
+    display: block;
+    margin: 0 auto;
+    min-width: 42vh;
+    /* max-width: 350px; */
 }
 
 /* end grid stuff */
@@ -256,5 +270,14 @@ grid-programs {
 
     .text-area {
         font-size: 45px;
+    }
+
+    .grid-content-right p {
+        font-size: 2vh;
+
+    }
+
+    programs {
+        height: 100vh;
     }
 }
